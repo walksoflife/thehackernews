@@ -1,0 +1,92 @@
+.edit-form {
+  .edit-btn-submit {
+    float: right;
+    width: fit-content;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #3732b3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.2s ease;
+    }
+  }
+
+  .edit-label {
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .edit-input {
+    margin-top: 4px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    outline: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    &:focus {
+      outline-color: #3732b3;
+      transition: all 0.2s eae;
+    }
+  }
+
+  .edit-textarea {
+    height: 110px;
+    margin-top: 4px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    outline: 1px solid lightgray;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    &:focus {
+      outline-color: #3732b3;
+      transition: all 0.2s eae;
+    }
+  }
+
+  .edit-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .edit-label {
+      font-weight: 500;
+      font-size: 17px;
+    }
+    .edit-avatar {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 18px 0;
+    }
+    .edit-group-input {
+      width: 0;
+      opacity: 0;
+      z-index: -1;
+      &::-webkit-file-upload-button {
+        visibility: hidden;
+      }
+    }
+    .edit-upload-img {
+      color: #3732b3;
+      font-weight: 500;
+
+      &:hover {
+        transition: all 0.2s ease;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

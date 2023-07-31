@@ -1,0 +1,39 @@
+.sub {
+  background-color: #272397;
+  .sub-container {
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    margin: 0 185px;
+    padding: 0 20px;
+
+    p {
+      color: #8fa0ff;
+      font-size: 13px;
+      line-height: 28px;
+    }
+
+    .sub-socials {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+
+      p {
+        color: #8fa0ff;
+      }
+
+      .sub-icon {
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: all 0.2s linear;
+        }
+      }
+    }
+  }
+}
