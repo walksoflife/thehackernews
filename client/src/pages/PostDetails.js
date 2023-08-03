@@ -83,7 +83,8 @@ const PostDetails = ({ emailBoxRef }) => {
   const socket = useRef(null);
 
   useEffect(() => {
-    if (socket.current === null) socket.current = io(process.env.REACT_APP_API);
+    if (socket.current === null)
+      socket.current = io("http://103.75.186.247:5000");
   }, []);
 
   useEffect(() => {
