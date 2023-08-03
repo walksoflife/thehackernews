@@ -30,7 +30,7 @@ const Trending = () => {
             <Link
               key={trend.id}
               className="link"
-              to={`/p/${trend.title}/${trend.id}`}
+              to={`/p/${trend.id}`}
               onClick={scroll}
             >
               <div className="trendingItem">

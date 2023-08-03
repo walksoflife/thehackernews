@@ -83,11 +83,7 @@ const PostDetails = ({ emailBoxRef }) => {
   const socket = useRef(null);
 
   useEffect(() => {
-    if (socket.current === null)
-      socket.current = io("http://103.75.186.247:5000");
-  }, []);
-
-  useEffect(() => {
+    if (!socket.current) socket.current = io("http://103.75.186.247:5000");
     socket.current && socket.current.emit("view-count", { postId });
   }, [postId]);
 
