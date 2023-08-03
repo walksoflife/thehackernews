@@ -82,8 +82,10 @@ const PostDetails = ({ emailBoxRef }) => {
 
   const socket = useRef(null);
 
+  const url = process.env.REACT_APP_API;
+
   useEffect(() => {
-    if (!socket.current) socket.current = io("http://103.75.186.247:5000");
+    if (!socket.current) socket.current = io(url);
     socket.current && socket.current.emit("view-count", { postId });
   }, [postId]);
 
